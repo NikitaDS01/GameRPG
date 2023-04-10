@@ -43,16 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="File_System.cs" />
-    <Compile Include="Json_System.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AbilitiesSystem\SkillSystem.csproj">
-      <Project>{6a576505-5199-4bd9-b6d2-fd79f91e7ee7}</Project>
-      <Name>SkillSystem</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Attribites\Characteristics.csproj">
       <Project>{7b8bab67-619d-4bb5-8cc8-4fe23b331853}</Project>
       <Name>Characteristics</Name>
@@ -70,9 +63,6 @@
       <Name>Items</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resource\Dialog\" />
-    <Folder Include="Resource\Item\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

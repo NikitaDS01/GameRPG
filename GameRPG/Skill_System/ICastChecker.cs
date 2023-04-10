@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Items
+namespace SkillSystem
 {
-    class Program
+    public interface ICastChecker
     {
-        static void Main(string[] args)
-        {
-
-        }
+        ICastChecker nextChecker { get; set; }
+        bool check();
     }
 }

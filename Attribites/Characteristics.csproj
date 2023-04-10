@@ -41,28 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnumParameter.cs" />
-    <Compile Include="Modificator.cs" />
-    <Compile Include="ModificatorContainer.cs" />
-    <Compile Include="ParameterCollection.cs" />
-    <Compile Include="Parameter\Armor.cs" />
-    <Compile Include="Parameter\Cooldown.cs" />
-    <Compile Include="Parameter\Crid_Chance.cs" />
-    <Compile Include="Parameter\Crit_Damage.cs" />
-    <Compile Include="Parameter\Damage.cs" />
-    <Compile Include="Parameter\Dexterity.cs" />
-    <Compile Include="Parameter\Energy.cs" />
-    <Compile Include="Parameter\Health.cs" />
-    <Compile Include="Parameter\Raduis.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TypeModificator\DecreaseCooldown.cs" />
-    <Compile Include="TypeModificator\DecreaseInValue.cs" />
-    <Compile Include="TypeModificator\IncreaseInPercent.cs" />
-    <Compile Include="TypeModificator\IncreaseInValue.cs" />
-    <Compile Include="TypeModificator\InPercent.cs" />
-    <Compile Include="TypeModificator\InValue.cs" />
-    <Compile Include="UnitParameter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

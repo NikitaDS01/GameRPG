@@ -2,7 +2,6 @@
 using Characteristics;
 using SkillSystem.TypeSkill;
 using Characteristics.TypeModificator;
-using Resource;
 using Dialog;
 using Items;
 

@@ -8,9 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AbilitiesSystem\SkillSystem.csproj" />
     <ProjectReference Include="..\GameRPG\GameRPG.csproj" />
-    <ProjectReference Include="..\Resource\Resource.csproj" />
   </ItemGroup>
 
 </Project>

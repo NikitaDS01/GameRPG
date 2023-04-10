@@ -53,27 +53,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Characteristic\EnumParameter.cs" />
+    <Compile Include="Characteristic\Modificator.cs" />
+    <Compile Include="Characteristic\ModificatorContainer.cs" />
+    <Compile Include="Characteristic\ParameterCollection.cs" />
+    <Compile Include="Characteristic\Parameter\Armor.cs" />
+    <Compile Include="Characteristic\Parameter\Cooldown.cs" />
+    <Compile Include="Characteristic\Parameter\Crid_Chance.cs" />
+    <Compile Include="Characteristic\Parameter\Crit_Damage.cs" />
+    <Compile Include="Characteristic\Parameter\Damage.cs" />
+    <Compile Include="Characteristic\Parameter\Dexterity.cs" />
+    <Compile Include="Characteristic\Parameter\Energy.cs" />
+    <Compile Include="Characteristic\Parameter\Health.cs" />
+    <Compile Include="Characteristic\Parameter\Raduis.cs" />
+    <Compile Include="Characteristic\TypeModificator\DecreaseCooldown.cs" />
+    <Compile Include="Characteristic\TypeModificator\DecreaseInValue.cs" />
+    <Compile Include="Characteristic\TypeModificator\IncreaseInPercent.cs" />
+    <Compile Include="Characteristic\TypeModificator\IncreaseInValue.cs" />
+    <Compile Include="Characteristic\TypeModificator\InPercent.cs" />
+    <Compile Include="Characteristic\TypeModificator\InValue.cs" />
+    <Compile Include="Characteristic\UnitParameter.cs" />
+    <Compile Include="Dialog\UnitDialog.cs" />
     <Compile Include="GameCommand\Command.cs" />
+    <Compile Include="Items\Artifact.cs" />
+    <Compile Include="Items\IItem.cs" />
+    <Compile Include="Items\Material.cs" />
+    <Compile Include="Items\Weapon.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource_Game\File_System.cs" />
+    <Compile Include="Resource_Game\Json_System.cs" />
+    <Compile Include="Skill_System\ICastChecker.cs" />
+    <Compile Include="Skill_System\ISkill.cs" />
+    <Compile Include="Skill_System\ISkillCastRequest.cs" />
+    <Compile Include="Skill_System\TypeCastChecker\CooldownChecker.cs" />
+    <Compile Include="Skill_System\TypeCastChecker\ManaChecker.cs" />
+    <Compile Include="Skill_System\TypeCastChecker\TerminalChecker.cs" />
+    <Compile Include="Skill_System\TypeSkillRequest\BombaRequest.cs" />
+    <Compile Include="Skill_System\TypeSkill\Bomba.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AbilitiesSystem\SkillSystem.csproj">
-      <Project>{6a576505-5199-4bd9-b6d2-fd79f91e7ee7}</Project>
-      <Name>SkillSystem</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Attribites\Characteristics.csproj">
-      <Project>{7b8bab67-619d-4bb5-8cc8-4fe23b331853}</Project>
-      <Name>Characteristics</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Items\Items.csproj">
-      <Project>{e1602fd9-27b4-42c7-b72f-a0cc10798ed1}</Project>
-      <Name>Items</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Characteristic\" />
+    <Folder Include="Resource_Game\Resource\Dialog\" />
+    <Folder Include="Resource_Game\Resource\Item\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
