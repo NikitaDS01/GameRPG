@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Characteristic\EnumParameter.cs" />
     <Compile Include="Characteristic\Modificator.cs" />
+    <Compile Include="Characteristic\ModificatorCollection.cs" />
     <Compile Include="Characteristic\ModificatorContainer.cs" />
     <Compile Include="Characteristic\ParameterCollection.cs" />
     <Compile Include="Characteristic\Parameter\Armor.cs" />
@@ -67,14 +68,15 @@
     <Compile Include="Characteristic\Parameter\Health.cs" />
     <Compile Include="Characteristic\Parameter\Raduis.cs" />
     <Compile Include="Characteristic\TypeModificator\DecreaseCooldown.cs" />
-    <Compile Include="Characteristic\TypeModificator\DecreaseInValue.cs" />
+    <Compile Include="Characteristic\TypeModificator\DecreaseInFullValue.cs" />
     <Compile Include="Characteristic\TypeModificator\IncreaseInPercent.cs" />
     <Compile Include="Characteristic\TypeModificator\IncreaseInValue.cs" />
     <Compile Include="Characteristic\TypeModificator\InPercent.cs" />
     <Compile Include="Characteristic\TypeModificator\InValue.cs" />
     <Compile Include="Characteristic\UnitParameter.cs" />
+    <Compile Include="Command_Game\AttachCommand.cs" />
     <Compile Include="Dialog\UnitDialog.cs" />
-    <Compile Include="GameCommand\Command.cs" />
+    <Compile Include="Command_Game\Command.cs" />
     <Compile Include="Items\Artifact.cs" />
     <Compile Include="Items\IItem.cs" />
     <Compile Include="Items\Material.cs" />
@@ -92,6 +94,7 @@
     <Compile Include="Skill_System\TypeCastChecker\TerminalChecker.cs" />
     <Compile Include="Skill_System\TypeSkillRequest\BombaRequest.cs" />
     <Compile Include="Skill_System\TypeSkill\Bomba.cs" />
+    <Compile Include="Statuses\Battle.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resource_Game\Resource\Dialog\" />

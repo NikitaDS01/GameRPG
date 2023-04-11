@@ -9,10 +9,10 @@ namespace SkillSystem
 {
     public interface ISkill
     {
-        UnitParameter GetCooldown { get; }
         void cast();
         void Update();
-        ISkillCastRequest request(ParameterCollection parametersUsers);
+        ISkillCastRequest request { get; }
         ParameterCollection ParametersSkills { get; }
+        string OutputText { get; }
     }
 }

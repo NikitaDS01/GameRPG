@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Characteristics.TypeModificator
 {
-    public class DecreaseInValue : Modificator<double>
+    public class DecreaseInFullValue : Modificator<double>
     {
         public int Value { get; set; }
         public int IncreaseValue { get; set; }
@@ -16,12 +16,12 @@ namespace Characteristics.TypeModificator
             return withModificators + Value;
         }
 
-        public DecreaseInValue(string name, string paramName, int value, double tickCount, bool isMaxMod = false) : base(name, paramName, tickCount, isMaxMod)
+        public DecreaseInFullValue(string name, string paramName, int value, double tickCount, bool isMaxMod = false) : base(name, paramName, tickCount, isMaxMod)
         {
             IncreaseValue = -1;
             Value = value;
         }
-        public DecreaseInValue(string name, string paramName, int value,int decreaseValue, double tickCount, bool isMaxMod = false) : base(name, paramName, tickCount, isMaxMod)
+        public DecreaseInFullValue(string name, string paramName, int value,int decreaseValue, double tickCount, bool isMaxMod = false) : base(name, paramName, tickCount, isMaxMod)
         {
             IncreaseValue = -decreaseValue;
             Value = value;

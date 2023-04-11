@@ -13,7 +13,7 @@ namespace Characteristics
         public Dictionary<string, UnitParameter> GetCollection => parameters;
         public List<UnitParameter> GetParameters => parameters.Values.ToList();
 
-        public int Count => throw new NotImplementedException();
+        public int Count => parameters.Count;
 
         public ParameterCollection()
         {
@@ -51,7 +51,7 @@ namespace Characteristics
             param.AddMods(effect);
 
         }
-        public void AddEffect(List<Modificator<double>> effects)
+        public void AddEffect(ModificatorCollection effects)
         {
             foreach (var effect in effects)
             {
@@ -60,7 +60,6 @@ namespace Characteristics
                 param.AddMods(effect);
             }
         }
-
         public void Update()
         {
             foreach (var param in GetParameters)

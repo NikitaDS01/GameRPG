@@ -42,7 +42,7 @@ namespace GameRPG
 
         public void Update() => Parameters.Update();
         public void AddMods(Modificator<double> effect) => Parameters.AddEffect(effect);
-        public void AddMods(List<Modificator<double>> effects) => Parameters.AddEffect(effects);
+        public void AddMods(ModificatorCollection effects) => Parameters.AddEffect(effects);
         public void PrintStat()
         {
             foreach (var par in Parameters.GetCollection)
